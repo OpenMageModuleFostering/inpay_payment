@@ -1,0 +1,22 @@
+<main>  
+  <div>
+		<p><?php echo Mage::helper('inpay')->__('Please wait, while we redirect you to inpay - instant online bank payments.'); ?></p>
+		<i class="fa fa-spinner fa-pulse fa-2x"></i>
+  </div>
+  
+	<form name="checkout_confirmation" id="checkout_confirmation" action="<?php echo $this->getFormAction();?>" method="POST">
+		<?php $arr  = array();
+		$arr = $this->getFormData();?>
+		<?php if (is_array($arr)): ?>
+			<?php foreach ($arr as $name => $value): ?>
+				<input type="hidden" name="<?php echo $name; ?>" <?php if (!is_null($value)) { echo 'value="'. $value . '"'; } ?> />
+			<?php endforeach; ?>
+		<?php endif; ?>
+	</form>
+	<script type="text/javascript">
+	//<![CDATA[
+		var paymentform = document.getElementById('checkout_confirmation');
+		window.onload = paymentform.submit();
+	//]]>
+	</script>
+</main>

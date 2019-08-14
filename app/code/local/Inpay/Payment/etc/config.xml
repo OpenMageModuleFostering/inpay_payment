@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Inpay_Payment>
+            <version>0.1.0</version>
+        </Inpay_Payment>
+    </modules>
+	<frontend>
+		<routers>
+			<inpay>
+				<use>standard</use>
+				<args>
+					<module>Inpay_Payment</module>
+					<frontName>inpay</frontName>
+				</args>
+			</inpay>
+		</routers>
+		<layout>
+            <updates>
+                <inpay module="inpay">
+                    <file>inpay.xml</file>
+                </inpay>
+            </updates>
+        </layout>
+	</frontend>
+    <global>
+        <models>
+            <inpay>
+                <class>Inpay_Payment_Model</class>
+            </inpay>
+        </models>
+		<blocks>
+            <inpay>
+                <class>Inpay_Payment_Block</class>
+            </inpay>
+        </blocks>
+		<helpers>
+            <inpay>
+                <class>Inpay_Payment_Helper</class>
+            </inpay>
+        </helpers>
+    </global>
+	<default>
+        <payment>
+            <inpay>
+                <active>1</active>
+				<model>inpay/inpay</model>
+                <order_status>pending</order_status>
+				<test_mode>1</test_mode>
+                <title>INSTANT ONLINE BANK PAYMENTS</title>
+				<handler_url>http://yourdomain.com/index.php/inpay/standard/callback</handler_url>
+            </inpay>
+         </payment>
+    </default>
+</config>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package>
+    <name>Inpay_Payment</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Source Licence (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Inpay &#x2013; instant global bank payments</summary>
+    <description>Inpay is an FSA-regulated and globally compliant service that enables the instant transfer of funds anywhere in the world. &#xD;
+&#xD;
+You can install it from magento connect or selecting zip file from magento connect manager.&#xD;
+&#xD;
+Configure Inpay&#xD;
+&#xD;
+Goto System -&gt; Configuration -&gt; Sales -&gt; Payment Methods -&gt; Inpay Payment Gateway.&#xD;
+&#xD;
+Required Fields.&#xD;
+&#xD;
+1. Merchant Id&#xD;
+2. Secret Key</description>
+    <notes>Inpay Payment Gateway&#xD;
+&#xD;
+Throughout the checkout if you select inpay as a payment method then it will redirect to inpay payment gateway server. &#xD;
+&#xD;
+It's support IPN.</notes>
+    <authors><author><name>Mikkel</name><user>Mikkel</user><email>mr@inpay.com</email></author></authors>
+    <date>2015-10-02</date>
+    <time>05:06:06</time>
+    <contents><target name="magelocal"><dir name="Inpay"><dir name="Payment"><dir name="Block"><file name="Inpay.php" hash="58331850711681b2e09848ecebf5b0c8"/><file name="Redirect.php" hash="7eee2e90a49c569a45f6fceeb78b5b32"/></dir><dir name="Helper"><file name="Data.php" hash="cbf854fa4c2ff70299b2e5c41e020573"/></dir><dir name="Model"><file name="Inpay.php" hash="174692246c522ea37e3b1d84b74d17d0"/></dir><dir name="controllers"><file name="StandardController.php" hash="f8f66bb6e2adb435cc17906c577a42e3"/></dir><dir name="etc"><file name="config.xml" hash="2b467726b218b1ba229f8cc9f896e2f4"/><file name="system.xml" hash="233db37b428bc084204be9a18bfe3df0"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="inpay.xml" hash="8a0ee552a0cf2395e2e9ce080d93dfb0"/></dir><dir name="template"><dir name="inpay"><file name="blank.phtml" hash="9ea7c1fb3a8556ed19f701757bb34a4b"/><file name="inpay.phtml" hash="d155f7b426210186ea087da37eacbb1f"/><file name="redirect.phtml" hash="eda04af566b891975e82d87cc2cf111e"/></dir></dir></dir></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="Fonts"><dir name="721238"><file name="212ab03d-5db2-4d6a-b94c-171cc702aa51.eot" hash="a0d17aab7416c814cff7e7095883db4c"/><file name="294099f3-8d00-4676-afc5-5e9d8d43ad69.svg" hash="51f68252e6d257aa37406f5e7dd19caa"/><file name="2cac77ec-9bc0-4ee7-87e4-27650190744f.woff" hash="9e63c621724b6e64dd1cd69aa8e57e30"/><file name="aaf11848-aac2-4d09-9a9c-aac5ff7b8ff4.ttf" hash="ea0e2f92a121c0745f707fde3eb81032"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Inpay_Payment.xml" hash="d2022e444ab9d45a95c65eea1de9096b"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.0.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

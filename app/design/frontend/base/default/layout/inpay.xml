@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<inpay_standard_redirect>
+		<reference name="root">
+			<action method="setTemplate"><template>inpay/blank.phtml</template></action>
+		</reference>
+		<reference name="content">
+            <block type="inpay/redirect" name="redirect.form" template="inpay/redirect.phtml"/>
+        </reference>
+	</inpay_standard_redirect>
+</layout>
