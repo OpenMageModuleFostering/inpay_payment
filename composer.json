@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Inpay_Payment",
+    "name": "OpenMageModuleFostering\/Inpay_Payment",
     "type": "magento-module",
     "license": "Open-Source-Licence-(OSL)",
     "homepage": "",
-    "description": "Inpay – instant global bank payments",
+    "description": "Inpay \u2013 instant global bank payments",
     "authors": [
-    {
-        "name": "Mikkel",
-        "email": "mr@inpay.com"
-    }
-],
+        {
+            "name": "Mikkel",
+            "email": "mr@inpay.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
