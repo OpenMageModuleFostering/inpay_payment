@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Inpay_Payment",
+    "name": "openmage-module-fostering\/inpay_payment",
     "type": "magento-module",
-    "license": "Open-Source-Licence-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Inpay \u2013 instant global bank payments",
     "authors": [
